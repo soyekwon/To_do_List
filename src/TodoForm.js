@@ -6,7 +6,7 @@ export default function TodoForm ( {handleSubmit} ){
     }
 
     return(
-        <form className = "TodoForm" onSubmit={(e) => addNewTodo(e, e.target.value[0])}>
+        <form className = "TodoForm" onSubmit={(e) => addNewTodo(e, e.target[0].value)}>
             <input type = "text"/>
             <button type = "submit">추가</button>
         </form>
